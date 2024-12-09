@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pdd</string>
+    <string name="text">Проверь, \n знаешь ли ты \n основные \n правила \n ПДД?</string>
+    <string name="text1">При повороте направо \n
+Вы должны уступить дорогу:</string>
+    <string name="text2">Молодец!!! \n
+Права совсем близки!\n
+Продолжай в том же духе!\n</string>
+</resources>

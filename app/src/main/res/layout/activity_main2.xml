@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/image_1"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="34dp"
+        android:gravity="center"
+        android:text="@string/text1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/but1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:backgroundTint="#B4B4B4"
+            android:gravity="start"
+            android:paddingVertical="15dp"
+            android:text="1. Только велосипедисту"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:cornerRadius="0dp"
+            android:onClick="but1"/>
+
+        <Button
+            android:id="@+id/but2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:backgroundTint="#B4B4B4"
+            android:gravity="left"
+            android:paddingVertical="15dp"
+            android:text="2. Только пешеходам"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:cornerRadius="0dp"
+            android:onClick="but2"/>
+
+        <Button
+            android:id="@+id/but3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:backgroundTint="#B4B4B4"
+            android:gravity="left"
+            android:onClick="but3"
+            android:paddingVertical="15dp"
+            android:text="3. Велосипедисту и пешеходам"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/but4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:backgroundTint="#B4B4B4"
+            android:gravity="left"
+            android:paddingVertical="15dp"
+            android:text="4. Никому"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:cornerRadius="0dp"
+            android:onClick="but4"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
